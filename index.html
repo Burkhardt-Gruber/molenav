@@ -3,45 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MoleNAV Home</title>
-    <style>
-        body {
-            margin: 7%;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: left;
-            align-items: center;
-            background: url('resources/space.jpg') no-repeat center center;
-            background-size: cover;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        h1 {
-            color: white;
-            font-size: 3.0em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-	    margin-top: -20%;
-        }
-	h2 {
-	    color: white;
-            font-size: 1.3em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-	    margin-top: -5%;
-        }
-	h3 {
-	    color: gray;
-            font-size: 1.0em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-	    margin: 10px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <title>MoleNAV Home</title> 
 </head>
 <body>
-	<div>
-    		<h1>Welcome to moleNAV</h1>
-    		<h2>Interlinking Satellites with Humans</h2>
-    		<h3>Coming 2025</h3>
-	</div>
+    <div id="home">
+        <div style="left: 5%; top: 30%; position: relative;">
+            <h1>Welcome to moleNAV</h1>
+            <h2>Command & Control, Simplified</h2>
+            <h3><i>Coming Spring 2025</i></h3>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button class="button" onclick="sendEmail()"><span>CONTACT</span></button>
+        </div>
+    </div>
+
+    <script>
+        function sendEmail() {
+            window.location.href = "mailto:bmburkha@calpoly.edu";
+        }
+    </script>
+
 </body>
-</html>
+</html> 
